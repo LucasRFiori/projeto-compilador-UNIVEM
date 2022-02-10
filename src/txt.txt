@@ -1,0 +1,8 @@
+int a=10;
+showthis("VAI SE FUDE");
+if( a <30 ){
+showthis("30 é maior que" ,a);
+}
+else{
+showthis(a,"é maior que 30");
+}
