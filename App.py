@@ -5,4 +5,4 @@ for linha in linhas:
 
     i+=1
     print("linha {} {}".format(i, linha))
-
+    print("")
