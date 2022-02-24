@@ -2,7 +2,7 @@ file = open("./src/txt.txt", mode="r", encoding="utf-8")
 tokens = ["if","showthis","else", "=", 
 "==", "*", "/", "%", "!=", "int", "float", 
 "string", "boolean", "else if", "{", "}",
-"(",")", "[","]", "for", "while", ";", ">", "<"]
+"(",")", "[","]", "for", "while", ";", ">", "<", "'", '"']
 chartocompare = []
 lines = file.readlines()
 i = 0
@@ -13,9 +13,11 @@ for line in lines:
         concatenation = "".join(chartocompare)
         if character == "\n":
             chartocompare.clear()
+            continue
         if character in tokens:
             chartocompare.clear()
             print(character)
+            continue
         if concatenation in tokens:
             chartocompare.clear()
             print(concatenation)
