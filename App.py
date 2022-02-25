@@ -2,7 +2,7 @@ file = open("./src/txt.txt", mode="r", encoding="utf-8")
 tokens = ["if","showthis","else", "=", 
 "==", "*", "/", "%", "!=", "int", "float", 
 "string", "boolean", "else if", "{", "}",
-"(",")", "[","]", "for", "while", ";", ">", "<", "'", '"']
+"(",")", "[","]", "for", "while", ";", ">", "<", "'", '"', ',']
 chartocompare = []
 lines = file.readlines()
 i = 0
